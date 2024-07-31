@@ -8,7 +8,7 @@ function App() {
   const showEmployees =true;
 
   return (
-    <div className="App bg-red-300">
+    <div className="App ">
         {showEmployees ? (
         <>
         <input type ='text'onChange={(e)=>{
@@ -16,9 +16,16 @@ function App() {
           setRole(e.target.value);
 
         }} />
-          <Employee name = "Nelson"  role="Intern"/>
-          <Employee name = "Rio" role={role}/>
-          <Employee name = "Irene"/>
+          <div className='flex flex-wrap justify-center'>
+            <Employee name = "Nelson"  role="Intern" img="https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images/artworkimages/medium/3/1-andy-warhol-mark-ashkenazi.jpg"/>
+            <Employee name = "Rio" role={role} img="https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images/artworkimages/medium/3/1-andy-warhol-mark-ashkenazi.jpg"/>
+            <Employee name = "Irene" img="https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images/artworkimages/medium/3/1-andy-warhol-mark-ashkenazi.jpg"/>
+            <Employee name = "Nelson"  role="Intern" img="https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images/artworkimages/medium/3/1-andy-warhol-mark-ashkenazi.jpg"/>
+            <Employee name = "Rio" role={role} img="https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images/artworkimages/medium/3/1-andy-warhol-mark-ashkenazi.jpg"/>
+            <Employee name = "Irene" img="https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images/artworkimages/medium/3/1-andy-warhol-mark-ashkenazi.jpg"/>
+            
+          </div>
+          
         </>                
         
       ): (
