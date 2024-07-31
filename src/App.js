@@ -8,7 +8,7 @@ function App() {
   const showEmployees =true;
 
   return (
-    <div className="App">
+    <div className="App bg-red-300">
         {showEmployees ? (
         <>
         <input type ='text'onChange={(e)=>{
